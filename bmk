@@ -1,0 +1,5 @@
+#!/bin/bash
+
+jump_box_username=kazemif
+ssh_dir_path=/home/farhad/.ssh
+docker run -it -v $ssh_dir_path/:/root/.ssh/ --rm  farhadkzm/bmk-app python commands.py --user $jump_box_username $@
